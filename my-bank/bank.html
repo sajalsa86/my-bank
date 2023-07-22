@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islami Bank</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* internal css */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="font-sans text-5xl text-center mt-6 bg-lime-200 p-3 capitalize">
+            welcome to <span class="text-green-600 font-semibold">islami bank</span>
+            bangladesh LTD</h1>
+    </header>
+
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-5 w-9/12 mx-auto text-white">
+                <!-- deposit -->
+                <div class="bg-indigo-400 p-8  rounded-xl">
+                    <h4 class="text-2xl font-semibold">Deposit</h4>
+                    <h2 class="text-5xl">$<span id="deposit-element">00</span></h2>
+                </div>
+                <!-- Withdraw -->
+                <div class="bg-fuchsia-400 p-8  rounded-xl">
+                    <h4 class="text-2xl font-semibold">Withdraw</h4>
+                    <h2 class="text-5xl">$<span id="withdraw-element">00</span></h2>
+                </div>
+                <!-- Balance -->
+                <div class="bg-green-400 p-8  rounded-xl">
+                    <h4 class="text-2xl font-semibold">Balance</h4>
+                    <h2 class="text-5xl">$<span id="balance-element">1240</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- diposit and Withdraw -->
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-5 w-9/12 mx-auto">
+                <!--  total deposit -->
+                <div class="bg-cyan-400 p-8  rounded-xl">
+                    <h3 class="text-3xl mb-3 text-indigo-400 font-semibold capitalize">please deposit</h3>
+                    <input id="deposit-field" class="block text-sm pl-2 py-1 w-96 rounded-lg" type="text" name="""
+                        placeholder=" $ Amount You Want to Diposit">
+                    <button id="deposit-btn"
+                        class="bg-cyan-800 hover:bg-sky-700 text-2xl py-1 text-white font-semibold mt-4 w-40 rounded-lg">Deposit</button>
+                </div>
+                <!-- total Withdraw -->
+
+                <div class="bg-orange-300 p-8  rounded-xl">
+                    <h3 class="text-3xl mb-3 text-lime-600 font-semibold capitalize">please Withdraw</h3>
+                    <input class="block text-sm pl-2 py-1 w-96 rounded-lg" type="text" name="" id="withdraw-field"
+                        placeholder="$ Amount You Want to Withdraw">
+                    <button id="withdraw-btn"
+                        class="bg-cyan-800 hover:bg-sky-700 text-2xl py-1 text-white font-semibold mt-4 w-40 rounded-lg">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/utilitis.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
